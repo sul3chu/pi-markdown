@@ -1,0 +1,41 @@
+{
+  "name": "pi-markdown",
+  "version": "0.3.0",
+  "description": "Copy-friendly code backgrounds and command/option/value colours inside Pi",
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "markdown",
+    "tui"
+  ],
+  "files": [
+    "index.ts",
+    "render.mjs",
+    "README.md",
+    "LICENSE",
+    "tests/",
+    "shell.mjs"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "1.4.x",
+    "@earendil-works/pi-tui": "1.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sul3chu/pi-markdown.git"
+  },
+  "homepage": "https://github.com/sul3chu/pi-markdown#readme",
+  "bugs": {
+    "url": "https://github.com/sul3chu/pi-markdown/issues"
+  },
+  "scripts": {
+    "test": "node tests/render.test.mjs"
+  }
+}
